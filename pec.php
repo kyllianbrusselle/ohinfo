@@ -24,7 +24,7 @@
     // Si l'id_client est présent dans l'URL, afficher le bouton "Générer le PDF"
     if (isset($_GET['id_client'])) {
         $id_client = $_GET['id_client'];
-        echo '<form action="enregistrer_pec.php" method="post">';
+        echo '<form action="confirmation.php?id_client=' . $id_client . '" method="post">';
         echo '<h2>Formulaire de prise en charge</h2>';
         echo '<label for="type">Type :</label>';
         echo '<select name="type" id="type">';
