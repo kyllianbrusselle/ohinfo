@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans l'application de prise en charge</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Options disponibles :</h2>
+            <ul>
+                <li><a href="createclient.html">Créer une fiche client</a></li>
+                <li><a href="PageListePriseEnCharge.php">Liste de prise en charge en cours</a></li>
+                <li>
+                    <form action="checkclient.php" method="POST">
+                        <label for="search">Rechercher un client :</label>
+                        <input type="text" id="search" name="search" placeholder="Initiales du prénom" />
+                        <input type="submit" value="Rechercher" />
+                    </form>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Mon Application. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
